@@ -1,6 +1,5 @@
 # 🧶 Tejiendo Sueños - Página Web
 
-¡Bienvenido! Esta es tu página web para tu emprendimiento de Crochet.
 
 ## 📋 Características Principales
 
@@ -49,13 +48,18 @@
 
 ```
 Tejiendo Sueños/
-├── index.html          # Archivo principal (HTML)
-├── css/
-│   └── style.css       # Estilos y colores pastel
-├── js/
-│   └── script.js       # Funcionalidades (filtros, imágenes, etc.)
-├── images/             # Carpeta para tus imágenes de productos
-└── README.md           # Este archivo
+├── 📄 index.html              # Archivo principal - Abre este
+├── 📂 css/
+│   └── style.css              # Estilos y colores pastel
+├── 📂 js/
+│   └── script.js              # Funcionalidades (filtros, imágenes, WhatsApp)
+├── 📂 images/                 # Carpeta para tus imágenes de productos
+├── 📄 README.md               # Este archivo - Guía de uso
+├── 📄 PERSONALIZACION.md      # Cómo personalizar la página
+├── 📄 PRUEBAS.md              # Checklist de pruebas
+├── 📄 RESUMEN.md              # Resumen del proyecto completo
+├── 📄 EJEMPLOS_PRODUCTOS.html # Ejemplos de más productos para agregar
+└── 📄 CONFIGURACION.css       # Referencia de colores y valores
 ```
 
 ---
@@ -80,45 +84,6 @@ Tejiendo Sueños/
 
 ---
 
-## 🔧 Personalización
-
-### Cambiar nombre del emprendimiento:
-En el archivo `index.html`, busca:
-```html
-<h1 class="logo">🧶 Tejiendo Sueños</h1>
-```
-Reemplaza "Tejiendo Sueños" con tu nombre
-
-### Cambiar número de WhatsApp:
-En el archivo `index.html`, busca:
-```html
-<a href="https://wa.me/50230725729?text=...
-```
-Reemplaza `50230725729` con tu número
-
-### Cambiar rango de precios:
-En el archivo `html`, busca:
-```html
-<input type="range" id="priceRange" min="100" max="300" value="300">
-```
-Cambia los valores de `min` y `max`
-
-### Agregar más productos:
-Copia esta estructura y agrégala al `gallery-grid`:
-```html
-<div class="product-card" data-category="amigurumis" data-price="150">
-    <div class="product-image-container">
-        <img src="images/tu-imagen.jpg" alt="Descripción">
-        <input type="file" class="image-upload" accept="image/*">
-        <button class="upload-btn">📷 Cambiar Imagen</button>
-    </div>
-    <h3>Nombre del Producto</h3>
-    <p class="price">Q150</p>
-    <button class="add-to-cart">Ver Detalles</button>
-</div>
-```
-
----
 
 ## 💡 Características Técnicas
 
@@ -138,54 +103,3 @@ Copia esta estructura y agrégala al `gallery-grid`:
 
 ---
 
-## 🐛 Solucionar Problemas
-
-### Las imágenes no aparecen:
-1. Asegúrate de que las imágenes estén en la carpeta `images/`
-2. Verifica que el nombre de archivo sea correcto
-3. Intenta con archivos JPG o PNG
-
-### WhatsApp no abre:
-1. Ten instalado WhatsApp Web o WhatsApp Desktop
-2. Verifica que el número sea correcto: +502 30725729
-3. Intenta desde otro navegador
-
-### Los filtros no funcionan:
-1. Recarga la página (F5)
-2. Abre la consola (F12) y busca errores
-3. Intenta con otro navegador
-
----
-
-## 📝 Notas Importantes
-
-- ✅ Las imágenes cargadas se guardan en tu navegador (LocalStorage)
-- ⚠️ Si limpias el caché del navegador, las imágenes se perderán
-- 📲 El botón de WhatsApp funciona en cualquier dispositivo
-- 🌐 Puedes compartir la página con otros usuarios
-
----
-
-## ✅ Checklist de Primeros Pasos
-
-- [ ] Abre `index.html` en tu navegador
-- [ ] Carga las imágenes de tus productos
-- [ ] Prueba los filtros de categoría y precio
-- [ ] Prueba el botón de WhatsApp
-- [ ] Comparte con tus amigos y clientes
-
----
-
-## 🎉 ¡Felicidades!
-
-Tu página web está lista. Ahora puedes:
-1. Compartir el link con tus clientes
-2. Mostrar tus productos hermosos
-3. Recibir consultas directas por WhatsApp
-4. Crecer tu emprendimiento de Crochet
-
-**¡Que disfrutes tu página web! 🧶💚**
-
----
-
-*Página creada con amor para Tejiendo Sueños*
