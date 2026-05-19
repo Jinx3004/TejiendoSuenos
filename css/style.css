@@ -140,36 +140,6 @@ body {
     border-color: var(--pastel-purple);
 }
 
-/* Filtro de Precio */
-.price-filter {
-    background: var(--white);
-    padding: 20px;
-    border-radius: 15px;
-    margin-bottom: 30px;
-    text-align: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-}
-
-.price-filter label {
-    font-weight: 600;
-    color: var(--pastel-purple);
-    margin-right: 15px;
-}
-
-.price-filter input[type="range"] {
-    width: 60%;
-    margin: 0 15px;
-    accent-color: var(--pastel-purple);
-}
-
-#priceDisplay {
-    font-weight: 600;
-    color: var(--pastel-pink);
-    background: var(--pastel-lavender);
-    padding: 5px 15px;
-    border-radius: 20px;
-}
-
 /* Grid de Productos */
 .gallery-grid {
     display: grid;
@@ -212,35 +182,6 @@ body {
     height: 100%;
     object-fit: cover;
     display: block;
-}
-
-.image-upload {
-    display: none;
-}
-
-.upload-btn {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    background: rgba(255, 255, 255, 0.9);
-    border: none;
-    padding: 8px 12px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 12px;
-    font-weight: 600;
-    opacity: 0;
-    transition: all 0.3s ease;
-    color: var(--pastel-purple);
-}
-
-.product-card:hover .upload-btn {
-    opacity: 1;
-}
-
-.upload-btn:hover {
-    background: var(--white);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .product-card h3 {
@@ -403,10 +344,6 @@ body {
         gap: 15px;
     }
 
-    .price-filter input[type="range"] {
-        width: 80%;
-    }
-
     .filters {
         gap: 8px;
     }
@@ -459,15 +396,6 @@ body {
 
     .filter-btn {
         width: 100%;
-    }
-
-    .price-filter {
-        padding: 15px;
-    }
-
-    .price-filter input[type="range"] {
-        width: 100%;
-        margin: 15px 0;
     }
 
     .product-card {

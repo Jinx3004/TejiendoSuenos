@@ -1,15 +1,13 @@
 # 🧶 Tejiendo Sueños - Página Web
 
-
-## 📋 Características Principales
+Página web profesional para tu emprendimiento de Crochet con galería de productos, filtros por categoría e integración con WhatsApp.
 
 ✅ **Paleta de colores pastel** - Diseño cálido y atractivo
-✅ **Galerías de productos** - Muestra tus amigurumis, flores tejidas y regalos
-✅ **Selección de imágenes** - Carga tus propias imágenes de productos
+✅ **Galería de productos** - Muestra tus amigurumis, flores tejidas y regalos
+✅ **Precios específicos** - Cada producto tiene su propio rango de precios
 ✅ **Filtrado por categorías** - Los clientes pueden filtrar por tipo de producto
-✅ **Filtrado por precio** - Rango de precios dinámico (Q100 - Q300)
-✅ **Botón flotante de WhatsApp** - Burbujita para contacto directo
-✅ **Integración WhatsApp** - Los clientes pueden consultar sobre productos
+✅ **Botón flotante de WhatsApp** - Contacto directo desde la página
+✅ **Integración WhatsApp** - Mensajes personalizados por producto
 
 ---
 
@@ -18,29 +16,18 @@
 ### 1. **Abrir la página**
    - Abre el archivo `index.html` en tu navegador web
 
-### 2. **Cambiar las imágenes de productos**
-   - Pasa el mouse sobre cualquier producto
-   - Aparecerá un botón "📷 Cambiar Imagen"
-   - Haz clic y selecciona la imagen que desees
-   - La imagen se guardará automáticamente
+### 2. **Reemplazar imágenes de productos**
+   - Descarga tus imágenes de productos
+   - Guarda las imágenes en la carpeta `images/` con los nombres correspondientes
+   - Abre `index.html` en tu navegador para ver los cambios
 
 ### 3. **Usar los filtros**
-   - **Filtro por categoría**: Haz clic en los botones para ver:
-     - Todos los productos
-     - Solo Amigurumis
-     - Solo Flores Tejidas
-     - Solo Regalos
-   
-   - **Filtro por precio**: Usa el slider para filtrar por rango de precios
+   - **Filtro por categoría**: Haz clic en Amigurumis, Flores Tejidas o Regalos
+   - **Botón Todos**: Muestra todos los productos
 
-### 4. **Ver detalles de producto**
+### 4. **Contacto por WhatsApp**
    - Haz clic en "Ver Detalles" en cualquier producto
-   - Se abrirá WhatsApp con un mensaje personalizado
-   - El cliente podrá consultar sobre ese producto específico
-
-### 5. **Contacto directo**
-   - Usa el botón circular verde de WhatsApp en la esquina inferior derecha
-   - Se abrirá WhatsApp con tu número: +502 30725729
+   - O usa el botón flotante verde en la esquina inferior derecha
 
 ---
 
@@ -48,18 +35,13 @@
 
 ```
 Tejiendo Sueños/
-├── 📄 index.html              # Archivo principal - Abre este
+├── 📄 index.html         # Archivo principal - Abre este
 ├── 📂 css/
-│   └── style.css              # Estilos y colores pastel
+│   └── style.css         # Estilos y colores pastel
 ├── 📂 js/
-│   └── script.js              # Funcionalidades (filtros, imágenes, WhatsApp)
-├── 📂 images/                 # Carpeta para tus imágenes de productos
-├── 📄 README.md               # Este archivo - Guía de uso
-├── 📄 PERSONALIZACION.md      # Cómo personalizar la página
-├── 📄 PRUEBAS.md              # Checklist de pruebas
-├── 📄 RESUMEN.md              # Resumen del proyecto completo
-├── 📄 EJEMPLOS_PRODUCTOS.html # Ejemplos de más productos para agregar
-└── 📄 CONFIGURACION.css       # Referencia de colores y valores
+│   └── script.js         # Funcionalidades (filtros, imágenes, WhatsApp)
+├── 📂 images/            # Carpeta para tus imágenes de productos
+└── 📄 README.md          # Este archivo - Guía de uso
 ```
 
 ---
@@ -80,7 +62,6 @@ Tejiendo Sueños/
 
 - **WhatsApp**: +502 30725729
 - **Productos**: Amigurumis, Flores Tejidas, Regalos Variados
-- **Rango de precios**: Q100 - Q300
 
 ---
 
@@ -88,7 +69,6 @@ Tejiendo Sueños/
 ## 💡 Características Técnicas
 
 ✨ **Responsive Design** - Se adapta a cualquier dispositivo (móvil, tablet, desktop)
-✨ **LocalStorage** - Las imágenes se guardan en el navegador
 ✨ **Sin necesidad de servidor** - Abre y usa directamente
 ✨ **Animaciones fluidas** - Efectos visuales atractivos
 ✨ **Compatible con todos los navegadores modernos**
