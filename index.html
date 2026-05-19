@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tejiendo Sueños - Artesanías de Crochet</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">🧶 Tejiendo Sueños</h1>
+                <p class="tagline">Artesanías hechas con amor</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Sección de Bienvenida -->
+        <section class="welcome-section">
+            <h2>Bienvenido a Tejiendo Sueños</h2>
+            <p>Creamos tejidos a crochet y amigurumis unicos, llenos de ternura y creatividad. Cada pieza es hecha a mano con amor, confianza y polvo de hadas.</p>
+        </section>
+
+        <!-- Galería de Productos -->
+        <section class="gallery-section">
+            <h2>Nuestros Productos</h2>
+            
+            <div class="filters">
+                <button class="filter-btn active" data-filter="todos">Todos</button>
+                <button class="filter-btn" data-filter="amigurumis">Amigurumis</button>
+                <button class="filter-btn" data-filter="flores">Flores Tejidas</button>
+                <button class="filter-btn" data-filter="regalos">Regalos</button>
+            </div>
+
+            <div class="price-filter">
+                <label for="priceRange">Filtrar por precio:</label>
+                <input type="range" id="priceRange" min="100" max="300" value="300">
+                <span id="priceDisplay">Q100 - Q300</span>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Las imágenes se cargarán dinámicamente aquí -->
+                <div class="product-card" data-category="amigurumis" data-price="150">
+                    <div class="product-image-container">
+                        <img src="images/amigurumi-1.jpg" alt="Amigurumi" class="product-image">
+                        <input type="file" class="image-upload" accept="image/*">
+                        <button class="upload-btn">📷 Cambiar Imagen</button>
+                    </div>
+                    <h3>Amigurumi Personalizado</h3>
+                    <p class="price">Q150</p>
+                    <button class="add-to-cart">Ver Detalles</button>
+                </div>
+
+                <div class="product-card" data-category="flores" data-price="120">
+                    <div class="product-image-container">
+                        <img src="images/flores-1.jpg" alt="Flores Tejidas" class="product-image">
+                        <input type="file" class="image-upload" accept="image/*">
+                        <button class="upload-btn">📷 Cambiar Imagen</button>
+                    </div>
+                    <h3>Flores Tejidas</h3>
+                    <p class="price">Q120</p>
+                    <button class="add-to-cart">Ver Detalles</button>
+                </div>
+
+                <div class="product-card" data-category="regalos" data-price="100">
+                    <div class="product-image-container">
+                        <img src="images/llavero-1.jpg" alt="Llavero Tejido" class="product-image">
+                        <input type="file" class="image-upload" accept="image/*">
+                        <button class="upload-btn">📷 Cambiar Imagen</button>
+                    </div>
+                    <h3>Llavero Tejido</h3>
+                    <p class="price">Q100</p>
+                    <button class="add-to-cart">Ver Detalles</button>
+                </div>
+
+                <div class="product-card" data-category="amigurumis" data-price="200">
+                    <div class="product-image-container">
+                        <img src="images/amigurumi-2.jpg" alt="Amigurumi Especial" class="product-image">
+                        <input type="file" class="image-upload" accept="image/*">
+                        <button class="upload-btn">📷 Cambiar Imagen</button>
+                    </div>
+                    <h3>Amigurumi Especial</h3>
+                    <p class="price">Q200</p>
+                    <button class="add-to-cart">Ver Detalles</button>
+                </div>
+
+                <div class="product-card" data-category="flores" data-price="130">
+                    <div class="product-image-container">
+                        <img src="images/flores-2.jpg" alt="Ramo Tejido" class="product-image">
+                        <input type="file" class="image-upload" accept="image/*">
+                        <button class="upload-btn">📷 Cambiar Imagen</button>
+                    </div>
+                    <h3>Ramo Tejido</h3>
+                    <p class="price">Q130</p>
+                    <button class="add-to-cart">Ver Detalles</button>
+                </div>
+
+                <div class="product-card" data-category="regalos" data-price="150">
+                    <div class="product-image-container">
+                        <img src="images/regalo-1.jpg" alt="Set de Regalos" class="product-image">
+                        <input type="file" class="image-upload" accept="image/*">
+                        <button class="upload-btn">📷 Cambiar Imagen</button>
+                    </div>
+                    <h3>Set de Regalos</h3>
+                    <p class="price">Q150</p>
+                    <button class="add-to-cart">Ver Detalles</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Contacto -->
+        <section class="contact-section">
+            <h2>¿Interesado en Nuestros Productos?</h2>
+            <p>Contáctanos para hacer tu pedido personalizado</p>
+            <div class="contact-info">
+                <p><strong>WhatsApp:</strong> +502 30725729</p>
+                <p><strong>Rango de Precios:</strong> Q100 - Q300</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Botón Flotante de WhatsApp -->
+    <a href="https://wa.me/50230725729?text=Hola%20Tejiendo%20Sueños,%20me%20interesa%20conocer%20tus%20productos" 
+       class="whatsapp-bubble" 
+       target="_blank" 
+       title="Contáctanos por WhatsApp">
+        💬 WhatsApp
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Tejiendo Sueños. Todos los derechos reservados. Hecho con 💚</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

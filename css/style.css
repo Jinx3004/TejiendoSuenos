@@ -1,0 +1,484 @@
+/* ============================================
+   PALETA DE COLORES PASTEL
+   ============================================ */
+:root {
+    --pastel-pink: #FFB3D9;
+    --pastel-blue: #B3D9FF;
+    --pastel-green: #B3FFB3;
+    --pastel-yellow: #FFFFB3;
+    --pastel-purple: #E6B3FF;
+    --pastel-peach: #FFD9B3;
+    --pastel-lavender: #E6D9FF;
+    --white: #FFFFFF;
+    --dark-text: #4A4A4A;
+    --light-gray: #F5F5F5;
+    --border-color: #E8E8E8;
+}
+
+/* ============================================
+   ESTILOS GENERALES
+   ============================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--dark-text);
+    background: linear-gradient(135deg, #FFF5F7 0%, #F5F7FF 50%, #F5FFF7 100%);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ============================================
+   HEADER
+   ============================================ */
+.header {
+    background: linear-gradient(135deg, var(--pastel-pink) 0%, var(--pastel-purple) 50%, var(--pastel-blue) 100%);
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.header-content h1.logo {
+    font-size: 48px;
+    color: var(--white);
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    animation: bounce 2s infinite;
+}
+
+.header-content .tagline {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.9);
+    font-style: italic;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* ============================================
+   SECCIÓN DE BIENVENIDA
+   ============================================ */
+.welcome-section {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 15px rgba(255, 179, 217, 0.2);
+    border-left: 5px solid var(--pastel-pink);
+    text-align: center;
+}
+
+.welcome-section h2 {
+    color: var(--pastel-purple);
+    margin-bottom: 15px;
+    font-size: 32px;
+}
+
+.welcome-section p {
+    color: var(--dark-text);
+    font-size: 16px;
+}
+
+/* ============================================
+   GALERÍA DE PRODUCTOS
+   ============================================ */
+.gallery-section {
+    margin-bottom: 40px;
+}
+
+.gallery-section h2 {
+    text-align: center;
+    color: var(--pastel-purple);
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+/* Filtros */
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    border: 2px solid var(--pastel-pink);
+    background: var(--white);
+    color: var(--pastel-pink);
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    background: var(--pastel-pink);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(255, 179, 217, 0.3);
+}
+
+.filter-btn.active {
+    background: var(--pastel-purple);
+    color: var(--white);
+    border-color: var(--pastel-purple);
+}
+
+/* Filtro de Precio */
+.price-filter {
+    background: var(--white);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.price-filter label {
+    font-weight: 600;
+    color: var(--pastel-purple);
+    margin-right: 15px;
+}
+
+.price-filter input[type="range"] {
+    width: 60%;
+    margin: 0 15px;
+    accent-color: var(--pastel-purple);
+}
+
+#priceDisplay {
+    font-weight: 600;
+    color: var(--pastel-pink);
+    background: var(--pastel-lavender);
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+/* Grid de Productos */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+/* Tarjetas de Producto */
+.product-card {
+    background: var(--white);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-top: 4px solid var(--pastel-pink);
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(255, 179, 217, 0.3);
+    border-top-color: var(--pastel-purple);
+}
+
+.product-image-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(135deg, var(--pastel-yellow) 0%, var(--pastel-peach) 100%);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.image-upload {
+    display: none;
+}
+
+.upload-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    opacity: 0;
+    transition: all 0.3s ease;
+    color: var(--pastel-purple);
+}
+
+.product-card:hover .upload-btn {
+    opacity: 1;
+}
+
+.upload-btn:hover {
+    background: var(--white);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.product-card h3 {
+    padding: 15px 15px 0;
+    color: var(--pastel-purple);
+    font-size: 18px;
+}
+
+.product-card p {
+    padding: 0 15px;
+    color: var(--dark-text);
+    font-size: 14px;
+}
+
+.price {
+    font-weight: 700;
+    color: var(--pastel-pink);
+    font-size: 22px !important;
+    padding: 10px 15px 0 !important;
+}
+
+.add-to-cart {
+    margin: 10px 15px 15px;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, var(--pastel-pink) 0%, var(--pastel-purple) 100%);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    margin-top: auto;
+}
+
+.add-to-cart:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(255, 179, 217, 0.4);
+}
+
+.product-card.hidden {
+    display: none;
+}
+
+/* ============================================
+   SECCIÓN DE CONTACTO
+   ============================================ */
+.contact-section {
+    background: linear-gradient(135deg, var(--pastel-blue) 0%, var(--pastel-lavender) 100%);
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.contact-section h2 {
+    color: var(--white);
+    margin-bottom: 15px;
+    font-size: 32px;
+}
+
+.contact-section p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-info p {
+    color: var(--dark-text);
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+/* ============================================
+   BOTÓN FLOTANTE WHATSAPP
+   ============================================ */
+.whatsapp-bubble {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--pastel-green) 0%, #90EE90 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 700;
+    font-size: 28px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    z-index: 100;
+    border: 3px solid var(--white);
+}
+
+.whatsapp-bubble:hover {
+    transform: scale(1.15);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #90EE90 0%, var(--pastel-green) 100%);
+}
+
+.whatsapp-bubble::after {
+    content: '';
+    position: absolute;
+    width: 66px;
+    height: 66px;
+    border: 2px solid var(--pastel-green);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+.footer {
+    background: linear-gradient(135deg, var(--pastel-pink) 0%, var(--pastel-purple) 100%);
+    color: var(--white);
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.footer p {
+    font-size: 14px;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+    .header-content h1.logo {
+        font-size: 36px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 15px;
+    }
+
+    .price-filter input[type="range"] {
+        width: 80%;
+    }
+
+    .filters {
+        gap: 8px;
+    }
+
+    .filter-btn {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+
+    .whatsapp-bubble {
+        width: 55px;
+        height: 55px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 24px;
+    }
+
+    .contact-section,
+    .welcome-section {
+        padding: 25px;
+    }
+
+    .contact-section h2,
+    .welcome-section h2 {
+        font-size: 24px;
+    }
+
+    .gallery-section h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 25px 15px;
+        margin-bottom: 25px;
+    }
+
+    .header-content h1.logo {
+        font-size: 28px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .filters {
+        flex-direction: column;
+    }
+
+    .filter-btn {
+        width: 100%;
+    }
+
+    .price-filter {
+        padding: 15px;
+    }
+
+    .price-filter input[type="range"] {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .product-card {
+        margin: 0;
+    }
+
+    .whatsapp-bubble {
+        width: 50px;
+        height: 50px;
+        bottom: 15px;
+        right: 15px;
+        font-size: 20px;
+    }
+}

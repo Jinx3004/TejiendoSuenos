@@ -1,0 +1,151 @@
+/* 
+   ============================================
+   CONFIGURACIÓN RÁPIDA - Tejiendo Sueños
+   ============================================
+   Edita este archivo para hacer cambios rápidos
+   sin necesidad de editar los archivos principales
+*/
+
+:root {
+    /* ========== INFORMACIÓN DEL NEGOCIO ========== */
+    --business-name: "Tejiendo Sueños";
+    --whatsapp-number: "50230725729";
+    --tagline: "Artesanías hechas con amor";
+    
+    /* ========== RANGO DE PRECIOS ========== */
+    --min-price: 100;
+    --max-price: 300;
+    --currency: "Q";
+    
+    /* ========== PALETA DE COLORES PASTEL ========== */
+    --pastel-primary: #FFB3D9;      /* Rosa Pastel (Color principal) */
+    --pastel-secondary: #E6B3FF;    /* Morado Pastel */
+    --pastel-accent: #B3D9FF;       /* Azul Pastel */
+    --pastel-success: #B3FFB3;      /* Verde Pastel */
+    --pastel-warm: #FFD9B3;         /* Durazno Pastel */
+    --pastel-light: #E6D9FF;        /* Lavanda Pastel */
+    --pastel-bright: #FFFFB3;       /* Amarillo Pastel */
+    
+    /* ========== COLORES NEUTRALES ========== */
+    --color-white: #FFFFFF;
+    --color-dark-text: #4A4A4A;
+    --color-light-gray: #F5F5F5;
+    --color-border: #E8E8E8;
+    
+    /* ========== TIPOGRAFÍA ========== */
+    --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-size-base: 16px;
+    --font-size-small: 14px;
+    --font-size-large: 18px;
+    --font-size-xl: 24px;
+    --font-size-2xl: 32px;
+    --font-size-3xl: 36px;
+    
+    /* ========== ESPACIADO ========== */
+    --spacing-xs: 5px;
+    --spacing-sm: 10px;
+    --spacing-md: 15px;
+    --spacing-lg: 20px;
+    --spacing-xl: 30px;
+    --spacing-2xl: 40px;
+    
+    /* ========== BORDES Y SOMBRAS ========== */
+    --border-radius-sm: 8px;
+    --border-radius-md: 15px;
+    --border-radius-lg: 25px;
+    --border-radius-full: 50%;
+    --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 15px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 6px 20px rgba(0, 0, 0, 0.15);
+    
+    /* ========== TRANSICIONES ========== */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+    
+    /* ========== BREAKPOINTS RESPONSIVOS ========== */
+    --breakpoint-sm: 480px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 1024px;
+    --breakpoint-xl: 1200px;
+}
+
+/* ============================================
+   EJEMPLO: Cambiar color primario
+   
+   Si quieres cambiar el rosa pastel por otro color:
+   
+   Encuentra: --pastel-primary: #FFB3D9;
+   Cambia a:  --pastel-primary: #FFB3FF;
+   
+   Esto cambiará automáticamente todos los elementos
+   que usan var(--pastel-primary)
+   
+   ============================================ */
+
+/* ============================================
+   COLORES PASTEL ALTERNATIVOS
+   
+   Si quieres inspiración para otros colores pastel:
+   
+   Rojo Pastel:         #FFB3A7
+   Rosa Intenso Pastel: #FFA7C4
+   Naranja Pastel:      #FFCCB3
+   Amarillo Pastel:     #FFFFA7
+   Verde Limón Pastel:  #D9FFA7
+   Verde Pastel:        #B3FFB3
+   Menta Pastel:        #A7FFD9
+   Cyan Pastel:         #A7FFFF
+   Azul Pastel:         #B3D9FF
+   Índigo Pastel:       #C4B3FF
+   Morado Pastel:       #E6B3FF
+   Magenta Pastel:      #FFA7FF
+   
+   ============================================ */
+
+/* ============================================
+   GRADIENTES POPULARES
+   
+   Si quieres usar gradientes predefinidos:
+   
+   Gradient 1: linear-gradient(135deg, #FFB3D9 0%, #E6B3FF 100%)
+   Gradient 2: linear-gradient(135deg, #B3D9FF 0%, #B3FFB3 100%)
+   Gradient 3: linear-gradient(135deg, #FFD9B3 0%, #FFFFB3 100%)
+   Gradient 4: linear-gradient(135deg, #E6B3FF 0%, #B3D9FF 100%)
+   Gradient 5: linear-gradient(135deg, #B3FFB3 0%, #FFFFB3 100%)
+   
+   ============================================ */
+
+/* ============================================
+   NOTAS SOBRE LAS CATEGORÍAS DE PRODUCTOS
+   
+   Las categorías disponibles son:
+   - amigurumis: Para muñecos tejidos
+   - flores: Para flores tejidas
+   - regalos: Para llaveros y regalos variados
+   
+   Cuando agregues productos, usa data-category
+   con uno de estos valores.
+   
+   ============================================ */
+
+/* ============================================
+   TAMAÑOS DE FUENTE RECOMENDADOS
+   
+   Títulos principales:     32-48px
+   Subtítulos:              24-32px
+   Encabezados de sección:  18-24px
+   Texto normal:            14-16px
+   Texto pequeño:           12-14px
+   
+   ============================================ */
+
+/* ============================================
+   INSTRUCCIONES DE USO
+   
+   1. Este archivo es solo para referencia
+   2. Los colores reales están definidos en style.css
+   3. Edita style.css para hacer cambios permanentes
+   4. Usa este archivo como guía de colores y valores
+   
+   ============================================ */
