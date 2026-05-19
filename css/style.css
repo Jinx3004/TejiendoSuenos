@@ -265,8 +265,45 @@ body {
 }
 
 /* ============================================
-   BOTÓN FLOTANTE WHATSAPP
+   BOTONES FLOTANTES (INSTAGRAM Y WHATSAPP)
    ============================================ */
+.instagram-bubble {
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #E6B3FF 0%, #FFB3D9 50%, #FFD9B3 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 700;
+    font-size: 28px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    z-index: 100;
+    border: 3px solid var(--white);
+}
+
+.instagram-bubble:hover {
+    transform: scale(1.15);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #FFD9B3 0%, #FFB3D9 50%, #E6B3FF 100%);
+}
+
+.instagram-bubble::after {
+    content: '';
+    position: absolute;
+    width: 66px;
+    height: 66px;
+    border: 2px solid #E6B3FF;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+
 .whatsapp-bubble {
     position: fixed;
     bottom: 30px;
@@ -353,6 +390,14 @@ body {
         font-size: 12px;
     }
 
+    .instagram-bubble {
+        width: 55px;
+        height: 55px;
+        bottom: 90px;
+        right: 20px;
+        font-size: 24px;
+    }
+
     .whatsapp-bubble {
         width: 55px;
         height: 55px;
@@ -400,6 +445,14 @@ body {
 
     .product-card {
         margin: 0;
+    }
+
+    .instagram-bubble {
+        width: 50px;
+        height: 50px;
+        bottom: 80px;
+        right: 15px;
+        font-size: 20px;
     }
 
     .whatsapp-bubble {
